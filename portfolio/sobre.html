@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Mim — Ricardo Rodrigues</title>
+  <!-- Folha de estilos principal -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVEGAÇÃO PRINCIPAL
+       Fixa no topo, visível em todas as páginas
+  ============================================= -->
+  <nav>
+    <div class="nav-container">
+      <span class="nav-logo">Ricardo<span>Rodrigues</span></span>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <!-- Botão de alternar tema claro/escuro -->
+      <button id="btn-tema" title="Alternar tema">🌙</button>
+      <!-- Botão hamburguer para telas mobile -->
+      <button id="btn-menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- =============================================
+       CONTEÚDO PRINCIPAL — SOBRE MIM
+  ============================================= -->
+  <main class="page-container">
+
+    <!-- Hero: apresentação principal -->
+    <section class="hero">
+      <div class="hero-text">
+        <span class="hero-tag">✦ Buscando primeiro estágio</span>
+        <h1 class="hero-name">Olá, eu sou<br>Ricardo Rodrigues</h1>
+        <p class="hero-role">Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong></p>
+        <p class="hero-desc">
+          Apaixonado por tecnologia, com foco em Ciência de Dados, Análise de Dados
+          e Desenvolvimento de Software. Busco constantemente aprimorar meus
+          conhecimentos por meio de cursos, projetos práticos e estudos independentes.
+        </p>
+        <a href="contato.html" class="btn btn-primary">Entre em contato →</a>
+      </div>
+
+      <!-- Foto do Ricardo -->
+      <div class="avatar-wrap">
+        <img src="foto.png" alt="Foto de Ricardo Rodrigues" class="avatar-foto" />
+      </div>
+    </section>
+
+    <!-- Informações pessoais -->
+    <section>
+      <div class="section-header">
+        <p class="section-eyebrow">Detalhes</p>
+        <h2 class="section-title">Informações pessoais</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="info-grid">
+        <div class="info-item">
+          <p class="info-label">📍 Localização</p>
+          <p class="info-value">Brasil</p>
+        </div>
+        <div class="info-item">
+          <p class="info-label">🎓 Instituição</p>
+          <p class="info-value">UNINTER</p>
+        </div>
+        <div class="info-item">
+          <p class="info-label">📚 Curso</p>
+          <p class="info-value">Análise e Des. de Sistemas</p>
+        </div>
+        <div class="info-item">
+          <p class="info-label">🎯 Foco</p>
+          <p class="info-value">Ciência & Análise de Dados</p>
+        </div>
+        <div class="info-item">
+          <p class="info-label">💼 Situação</p>
+          <p class="info-value">Buscando estágio</p>
+        </div>
+        <div class="info-item">
+          <p class="info-label">🔗 LinkedIn</p>
+          <p class="info-value">
+            <a href="https://www.linkedin.com/in/ricardorodrigues-analyst/" target="_blank" rel="noopener">Ver perfil</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section style="margin-top: 3rem;">
+      <div class="section-header">
+        <p class="section-eyebrow">Fora do código</p>
+        <h2 class="section-title">Hobbies &amp; interesses</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <div class="hobby-icon">🏋️</div>
+          <p class="hobby-name">Atividades físicas</p>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">🎮</div>
+          <p class="hobby-name">Videogame</p>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">🎌</div>
+          <p class="hobby-name">Animes</p>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">📊</div>
+          <p class="hobby-name">Análise de Dados</p>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">🐍</div>
+          <p class="hobby-name">Python</p>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">🚀</div>
+          <p class="hobby-name">Novidades em Tech</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Ricardo Rodrigues de Oliveira · Desenvolvido com HTML5, CSS3 e JavaScript</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

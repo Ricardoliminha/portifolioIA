@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — Ricardo Rodrigues</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVEGAÇÃO (igual em todas as páginas) -->
+  <nav>
+    <div class="nav-container">
+      <span class="nav-logo">Ricardo<span>Rodrigues</span></span>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <button id="btn-tema" title="Alternar tema">🌙</button>
+      <button id="btn-menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page-container">
+
+    <div class="section-header">
+      <p class="section-eyebrow">Vamos conversar</p>
+      <h1 class="section-title">Entre em contato</h1>
+      <div class="divider"></div>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- Informações de contato -->
+      <aside class="contact-info">
+        <h3>Fico feliz em receber sua mensagem!</h3>
+        <p>
+          Seja para oportunidades de estágio, parcerias ou apenas
+          para trocar uma ideia sobre dados e tecnologia —
+          preencha o formulário e responderei em breve.
+        </p>
+        <ul class="contact-links">
+          <li>
+            <div class="contact-icon">📧</div>
+            <div>
+              <strong>E-mail</strong><br>
+              <a href="mailto:rikliminha@gmail.com">rikliminha@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <div class="contact-icon">🐙</div>
+            <div>
+              <strong>GitHub</strong><br>
+              <a href="https://github.com/Ricardoliminha" target="_blank" rel="noopener">github.com/Ricardoliminha</a>
+            </div>
+          </li>
+          <li>
+            <div class="contact-icon">💼</div>
+            <div>
+              <strong>LinkedIn</strong><br>
+              <a href="https://www.linkedin.com/in/ricardorodrigues-analyst/" target="_blank" rel="noopener">ricardorodrigues-analyst</a>
+            </div>
+          </li>
+          <li>
+            <div class="contact-icon">📊</div>
+            <div>
+              <strong>Kaggle</strong><br>
+              <a href="https://www.kaggle.com/liminharicardo" target="_blank" rel="noopener">kaggle.com/liminharicardo</a>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Formulário de contato (validado por JavaScript) -->
+      <div class="contact-form">
+        <!--
+          FORMULÁRIO DE CONTATO
+          Validação feita pelo arquivo js/main.js
+          Envio simulado — sem back-end
+        -->
+        <form id="form-contato" action="#" novalidate>
+
+          <!-- Campo Nome -->
+          <div class="form-group">
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome"
+                   placeholder="Ex: João Silva"
+                   autocomplete="name" />
+            <span class="error-msg" role="alert"></span>
+          </div>
+
+          <!-- Campo E-mail -->
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Ex: joao@exemplo.com"
+                   autocomplete="email" />
+            <span class="error-msg" role="alert"></span>
+          </div>
+
+          <!-- Campo Mensagem -->
+          <div class="form-group">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem"
+                      placeholder="Escreva sua mensagem aqui..."></textarea>
+            <span class="error-msg" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn-submit">Enviar mensagem →</button>
+
+        </form>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Ricardo Rodrigues de Oliveira · Desenvolvido com HTML5, CSS3 e JavaScript</p>
+  </footer>
+
+  <!-- Modal de confirmação de envio -->
+  <div class="modal-overlay" id="modal-sucesso" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="modal-icon">✅</div>
+      <h2 class="modal-title">Mensagem enviada!</h2>
+      <p class="modal-text">Obrigado pelo contato. Responderei o mais breve possível!</p>
+      <button class="modal-close" id="modal-fechar">Fechar</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
